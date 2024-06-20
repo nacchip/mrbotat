@@ -28,15 +28,16 @@
     video {
         display: none;
     }
-
 </style>
 </head>
 <body>
-    <button class="fullscreen-button" onclick="clicked()">Нажми на меня!</button>  
-    <video width="640" height="360" loop>
-        <source src="video.mov">Вы лох!
-    </video>
+    <button class="fullscreen-button" onclick="clicked()"><h1>click me :3</h1></button>  
+    <video width="640" height="360" loop><source src="video.mov">lol</video>
     <script>
+        var text = document.querySelector('h1');
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            text.style.fontSize = "70pt"
+        }
         function clicked() {
             var video = document.querySelector('video');
             var button = document.querySelector('button');
