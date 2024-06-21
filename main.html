@@ -2,7 +2,7 @@
 hi! if u're reading this, it means that u're truly genius
 let's be friends! type me in telegram: https://t.me/nacchip or simple find me by @nacchip tag :3
 
-P. S. close this console, and then press the key combination SHIFT + TAB for an easter egg :> 
+P. S. close this console, and then press the key combination SHIFT + Q for an easter egg :> 
 P. P. S. developed by @nacchip
 -->
 <!DOCTYPE html>
@@ -57,8 +57,12 @@ P. P. S. developed by @nacchip
         document.onkeydown = keydown;
         function keydown(evt){
             if (!evt) evt = event;
-            if (evt.shiftKey && evt.keyCode == 9){
-                  alert("пасхалко!!"); 
+            if (evt.shiftKey && evt.keyCode == 81){
+                if (confirm('click \'OK\' to see the most coolest easter egg in the world')) {
+                    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D");
+                } else {
+                    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D");
+                } 
             }
         }
     </script>
