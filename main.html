@@ -2,7 +2,8 @@
 hi! if u're reading this, it means that u're truly genius
 let's be friends! type me in telegram: https://t.me/nacchip or simple find me by @nacchip tag :3
 
-P. S. developed by @nacchip
+P. S. close this console, and then press the key combination SHIFT + TAB for an easter egg :> 
+P. P. S. developed by @nacchip
 -->
 <!DOCTYPE html>
 <html>
@@ -50,6 +51,15 @@ P. S. developed by @nacchip
             button.style.display = "none"
             video.style.display = "block"
             video.play();
+        }
+    </script>
+    <script>
+        document.onkeydown = keydown;
+        function keydown(evt){
+            if (!evt) evt = event;
+            if (evt.shiftKey && evt.keyCode == 9){
+                  alert("пасхалко!!"); 
+            }
         }
     </script>
 </body>
